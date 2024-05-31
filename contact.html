@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calvin's Website - Contact</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Algemene stijlen */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Stijlen voor de header */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Stijlen voor het menu */
+    nav {
+      background-color: #444;
+      padding: 10px;
+      text-align: center;
+      display: inline-block; /* Zorg ervoor dat het naast de knop staat */
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    /* Stijlen voor de knop */
+    .send-email {
+      display: inline-block; /* Zorg ervoor dat het naast het menu staat */
+      vertical-align: top; /* Zorg ervoor dat het op dezelfde hoogte staat als het menu */
+      margin-left: 20px; /* Ruimte tussen het menu en de knop */
+    }
+
+    .send-email button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .send-email button:hover {
+      background-color: #555;
+    }
+
+    /* Stijlen voor het formulier */
+    form {
+      width: 60%;
+      margin: 0 auto;
+      background-color: #8BC34A; /* Groene achtergrond */
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 99%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #555;
+    }
+
+    /* Stijlen voor de footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 5px;
+      text-align: center;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Contacteer Calvin</h1>
+</header>
+
+<nav>
+  <a href="pagina 1.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="content">
+  <header>
+    <h3>Telefoonnummer: 0611348499</h3>
+    <h4>Email: <a href="mailto:jodenkoekjes2006@outlook.com">jodenkoekjes2006@outlook.com</a></h4>
+    <h5>Adres: Enschede, Sibculobrink</h5>
+  </header>
+
+  <h2>Stuur mij een bericht</h2>
+
+  <form action="submit.php" method="POST">
+    <input type="text" name="name" placeholder="Je naam" required>
+    <input type="email" name="email" placeholder="Je email" required>
+    <textarea name="message" placeholder="Je bericht" required></textarea>
+    <input type="submit" value="Verstuur">
+  </form>
+</div>
+
+<footer>
+  <p>© copyright real company</p>
+</footer>
+
+</body>
+</html>
